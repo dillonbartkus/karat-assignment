@@ -1,9 +1,9 @@
-import Container from "./CardSectionContainer"
+import Container from './Container';
 
 export default function App() {
 
   return (
-    <div className="App">
+    <div className='App'>
       <Container />
     </div>
   )

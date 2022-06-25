@@ -1,12 +1,14 @@
-import { useQuery, gql } from "@apollo/client";
-import CardSection from "./CardSectionUI";
-import TransactionList from "./TransactionListUI";
+import { useQuery, gql } from '@apollo/client';
+import CardSection from './CardSection';
+import TransactionContainer from './TransactionContainer';
 
 const USER_QUERY = gql`
   {
     User(id: "ich_1DYbFCKZnkqhCvg17Kipb8WI") {
       id
-      card
+    }
+    Card(id: "ic_1LEJTIKZnkqhCvg1ByRzAo6n") {
+      id
     }
   }
 `;
@@ -20,7 +22,7 @@ export default function Container() {
   return (
     <div className="container">
       <CardSection data={data} />
-      <TransactionList />
+      <TransactionContainer cardId={data.Card.id} />
     </div>
   );
 }
