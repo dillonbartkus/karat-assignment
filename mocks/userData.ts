@@ -3,6 +3,7 @@ module.exports = {
     {
       id: "ich_1DYbFCKZnkqhCvg17Kipb8WI",
       object: "issuing.cardholder",
+      balance: -73.35,
       billing: {
         address: {
           city: "Beverly Hills",
@@ -15,11 +16,11 @@ module.exports = {
       },
       company: null,
       created: 1542728070,
-      email: "jenny@example.com",
+      email: "steve@hello.com",
       individual: null,
       livemode: false,
       metadata: {},
-      name: "Jenny Rosen",
+      name: "Steve McPerson",
       phone_number: "+18008675309",
       requirements: {
         disabled_reason: null,
@@ -56,11 +57,11 @@ module.exports = {
         },
         company: null,
         created: 1542728070,
-        email: "jenny@example.com",
+        email: "steve@hello.com",
         individual: null,
         livemode: false,
         metadata: {},
-        name: "Jenny Rosen",
+        name: "Steve McPerson",
         phone_number: "+18008675309",
         requirements: {
           disabled_reason: null,
@@ -217,7 +218,7 @@ module.exports = {
       flow: "obt_1LDsq72eZvKYlo2CRj1v3gZi",
       flow_type: "outbound_transfer",
       livemode: false,
-      status: "declined",
+      status: "approved",
       status_transitions: {
         posted_at: null,
         void_at: null,
@@ -263,7 +264,7 @@ module.exports = {
       flow: "obt_1LDsq72eZvKYlo2CRj1v3gZi",
       flow_type: "outbound_transfer",
       livemode: false,
-      status: "approved",
+      status: "declined",
       status_transitions: {
         posted_at: null,
         void_at: null,
